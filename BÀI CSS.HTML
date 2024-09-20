@@ -8,10 +8,14 @@
          #ten-mau 
         {
             color: rgb(255, 145, 0) ;
+            background-color: rgb(223, 236, 236) ;
+            padding:25px 25px 25px 25px;
         }
         #mau-HEX 
         {
             color: #e065b1;
+            background-color: aquamarine;
+            padding:25px 25px 25px 25px;
         }
         #mau-RGB 
         {
@@ -19,10 +23,7 @@
         }
         #khung-anh
         {
-            background-image: url('./anhe/images.jpg') ;
-            background-repeat: no-repeat;
-            width: 2000px;
-            height: 2000px;
+            background: url('./anhe/images.jpg') no-repeat;
         } 
          #click-me {
             border: 2px solid black;
@@ -33,11 +34,87 @@
         }
         #nd1{
             margin-right: 100px;
+            background-color: darksalmon;
+            padding: 30px ;
         }
         #nut-2{
             margin-top: 100px;
-        }
 
+        }
+        #nd{
+            border: 1px solid black;
+            background-color: aqua;
+            padding: 50px 30px 50px 80px;
+        }
+        .vien{
+            border: 2px solid black;
+            background-color: aquamarine;
+            padding-top: 25px;
+            
+            
+        }
+        #p1{
+            padding: 25px 50px 75px 100px ;
+        }
+        #p2{
+            padding: 25px 50px 75px;
+        }
+        #p3{
+            padding: 25px 50px 25px 50px;
+        }
+        #p4{
+            padding: 25px;
+        }
+        #div1{
+            border: 2px solid black;
+            width: 50% ;
+            height: 200px;
+        }
+        #div2{
+            border: 2px solid black;
+            width: 50px ;
+            height: 100px;
+        }
+        #doanvan{
+            color: blue;
+            font-family: Arial;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: bold;
+            
+        }
+        #nghieng{
+            font-style:italic;
+        }
+        .gray{
+            background-color: gray;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+        .giu-dong {
+            text-align: center;
+        }
+        #ndung {
+            width: 30%;
+            float: left;
+            height:  200px;
+            text-align: center;
+        }
+        #nd-chinh{
+            width: 40%;
+            float: left;
+            height:  200px;
+            text-align: center;
+        }
+        #nd3{
+            width: 30%;
+            float: left;
+            height:  200px;
+            text-align: center;
+        }
+        #menu{
+            display: none;
+        }
 
     
     </style>
@@ -47,15 +124,44 @@
     <p id="ten-mau">sử dụng tên màu</p>
     <p id="mau-HEX">mã màu HEX</p>
     <p id="mau-RGB">mã màu RGB</p>
-    <div id="khung-anh">
 
-    </div>
+    <div id="khung-anh"></div>
+
+    <br><br><br>
     <span id="nd1" class="noidung">nội dung 1</span>
-    <span class="noidung">nội dung 2</span>
+    <span id="nd2" class="noidung">nội dung 2</span>
     <br><br><br>
     <button>nut 1</button> <br>
     <button id="nut-2">nut 2</button>
     <br><br><br>
     <i id="click-me"> click me!</i>
+    <h2>Sử dụng các thuộc tính Padding rút gọn</h2>
+    <p id="nd">phần tử div có padding-top là 50px,padding-right là 30px, padding-bottom là 50px,và padding-left là 80px</p>
+   <div>
+    <h2>Sử dụng thuộc tính padding rút gọn</h2>
+    <p id="p1" class="vien">phần tử div này có padding top là 25px, padding right là 50px  padding-bottom là 75px,và padding-left là 100px </p>
+    <p id="p2" class="vien">phần tử div này có padding top là 25px, padding right là 50px  padding-bottom là 75px,</p>
+    <p id="p3" class="vien">phần tử có padding top và bottom là 25px, padding left và right là 50px</p>
+    <p id="p4" class="vien">phần tử này có padding top,right,bottom và left là 25px</p>
+   </div>
+   <div id="div1"></div>
+   <div id="div2"></div>
+<br><br><br>
+<p id="doanvan">Đây là 1 đoạn văn đã đc định dạng <span id="nghieng">Arial</span></p>
+<br><br><br>___________________________________________________________________________________________
+
+
+
+<div id="header" class="gray giu-dong">Header</div>
+<div id="menu" class="gray giu-dong">thanh menu điều hướng</div>
+<div>
+    <div id="ndung">Nội dung</div>
+    <div id="nd-chinh">Nội dung chính</div>
+    <div id="nd3">Nội dung</div>
+</div>
+<div id="footer" class="gray giu-dong">footer</div>
+</div>
+<button id="anhien">Ẩn/Hiện</button>
+
 </body>
 </html>
